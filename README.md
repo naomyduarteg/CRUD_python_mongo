@@ -9,7 +9,7 @@
 ```
 https://github.com/naomyduarteg/CRUD_python_mongo.git
 ```
-2. Create a virutal environment
+2. Create a virtual environment
 
 ```
 python3 -m venv <name_of_venv>
