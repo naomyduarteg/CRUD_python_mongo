@@ -17,7 +17,7 @@ def create_addrs(request: Request, user_addrs: UserAddress = Body(...)):
 def list_addrs(request: Request):
     return addresses.list_addrs(request, 100)
 
-@router.get("/{id}", response_description="Get user's addresses", response_model=List[UserAddress])
+@router.get("/{user_id}", response_description="Get user's addresses", response_model=List[UserAddress])
 def find_addrs(request: Request, user_id: str):    
     return addresses.find_addrs(request, user_id)
 
